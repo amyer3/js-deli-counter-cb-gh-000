@@ -17,7 +17,7 @@ function nowServing(array){
      return "The line is currently empty."
    } else {
      var sentence = ""
-     for (var i = 0; i < line.length, i++){
+     for (var i = 0; i < line.length; i++){
        sentence.concat(`${i}. ${line[i]} `)
      }
      return `The line is currently: `+ sentence
