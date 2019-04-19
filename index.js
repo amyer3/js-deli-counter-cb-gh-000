@@ -12,4 +12,3 @@ function nowServing(array){
     return `Currently serving ${name}`
   }
 }
-
