@@ -18,6 +18,7 @@ function nowServing(array){
    } else {
      var sentence = "The line is currently: "
      for (var i = 0; i < line.length; i++){
+       console.log(i);
        sentence + `${i}. ${line[i]} ${i = line.length -1 ? "": ", "} `
      }
      return sentence
