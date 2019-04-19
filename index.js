@@ -1,6 +1,6 @@
 function takeANumber(array, name){
   array.push(name)
-  return `Welcome ${name}, you are number ${array.length + 1} in line`
+  return `Welcome ${name}, you are number ${array.length + 1} in line.`
 }
 
 function nowServing(array){
@@ -9,7 +9,7 @@ function nowServing(array){
   } else {
     var name = array[0]
     array.shift()
-    return `Currently serving ${name}`
+    return `Currently serving ${name}.`
   }
 }
  function currentLine(line){
@@ -20,6 +20,6 @@ function nowServing(array){
      for (var i = 0; i < line.length; i++){
        sentence.concat(`${i}. ${line[i]} `)
      }
-     return `The line is currently: `+ sentence
+     return "The line is currently: " + sentence
    }
  }
