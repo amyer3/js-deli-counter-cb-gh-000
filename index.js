@@ -1,8 +1,15 @@
 function takeANumber(array, name){
-  console.log(`Welcome ${name}, you are number ${array.length + 1} in line`);
-  return array.push(name)
+  array.push(name)
+  return `Welcome ${name}, you are number ${array.length + 1} in line`
 }
 
-function nowServing(){
-  
+function nowServing(array){
+  if (array.length === 0){
+    return "There is nobody waiting to be served!"
+  } else {
+    var name = array[0]
+    array.shift()
+    return `Currently serving ${name}`
+  }
 }
+
