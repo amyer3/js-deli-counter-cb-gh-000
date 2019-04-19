@@ -18,7 +18,7 @@ function nowServing(array){
    } else {
      var sentence = "The line is currently: "
      for (var i = 0; i < line.length; i++){
-       sentence.concat(`${i}. ${line[i]} `)
+       sentence + `${i}. ${line[i]}, `
      }
      return sentence
    }
