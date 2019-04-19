@@ -13,12 +13,12 @@ function nowServing(array){
   }
 }
  function currentLine(line){
-   if (line.length===0){
+   if (line.length === 0){
      return "The line is currently empty."
    } else {
      var sentence = "The line is currently: "
      for (var i = 0; i < line.length; i++){
-       sentence + `${i}. ${line[i]}, `
+       sentence + `${i}. ${line[i]} ${i = line.length -1 ? "": ", "} `
      }
      return sentence
    }
